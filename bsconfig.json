@@ -1,0 +1,14 @@
+{
+  "name": "taquito-rescript-bindings",
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "sources": [
+    {
+      "dir": "src"
+    }
+  ],
+  "bs-dependencies": ["@ryyppy/rescript-promise"]
+}

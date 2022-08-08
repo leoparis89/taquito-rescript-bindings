@@ -1,0 +1,20 @@
+{
+  "name": "taquito-bindings",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "res:build": "rescript build",
+    "res:watch": "rescript build -w",
+    "res:clean": "rescript clean"
+  },
+  "devDependencies": {
+    "@ryyppy/rescript-promise": "^2.1.0",
+    "rescript": "^9.1.4"
+  },
+  "peerDependencies": {
+    "@taquito/taquito": "^13.0.1",
+    "@taquito/utils": "^13.0.1",
+    "@taquito/signer": "^13.0.1"
+  }
+}
