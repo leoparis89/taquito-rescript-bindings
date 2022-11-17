@@ -6,15 +6,17 @@
   "scripts": {
     "res:build": "rescript build",
     "res:watch": "rescript build -w",
-    "res:clean": "rescript clean"
+    "res:clean": "rescript clean -with-deps",
+    "test": "rescript build && retest lib/js/tests/*.bs.js"
   },
   "devDependencies": {
     "@ryyppy/rescript-promise": "^2.1.0",
-    "rescript": "^9.1.4"
+    "rescript": "^10.0.1",
+    "rescript-test": "^4.0.0"
   },
   "peerDependencies": {
+    "@taquito/signer": "^13.0.1",
     "@taquito/taquito": "^13.0.1",
-    "@taquito/utils": "^13.0.1",
-    "@taquito/signer": "^13.0.1"
+    "@taquito/utils": "^13.0.1"
   }
 }
